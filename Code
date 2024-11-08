@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+
+public class myProgram
+{
+    public static void Main(string[] args)
+    {
+        /*
+        //Parsing 
+          string str = "123";
+          int num = int.Parse(str);
+
+          Console.WriteLine(num);
+          Console.WriteLine(str.GetType());//To check data type
+          */
+
+
+        //Type Casting 
+        /*
+        decimal d = 234.726778768m;
+        int num = Convert.ToInt32(d);
+        bool b = Convert.ToBoolean(d);
+
+
+        Console.WriteLine(num);
+        Console.WriteLine(b);
+
+        */
+
+        //convert input string value in int data type
+        /*
+        Console.Write("Enter your age:");
+        int age = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(age);
+        */
+
+
+        //String Mathods
+        /*
+        string str = "Hey, How are you!!";
+        string uppar = str.ToUpper();
+        string lower = str.ToLower();
+        string replace = str.Replace("you", "Boys");
+        string insert = str.Insert(18, " And What about you");
+
+        Console.WriteLine(uppar + "\n" + lower + " \b " + replace);
+        Console.Write(insert);
+
+        //Other string methods is trim(),contain(), IndexOf()...
+
+        */
+
+        //int[,] twoD = {{1,2,3},
+        //    {5,6,7}};
+
+        //foreach (var Newarr in twoD)
+        //{
+        //    Console.WriteLine(Newarr);
+        //}
+
+
+        //List<int> list = new List<int>();
+        //list.Add(1);
+        //list.Add(4);
+        //list.Add(5);
+        //list.Add(6);
+        //foreach (var Newlist in list)
+        //{
+        //    Console.WriteLine(Newlist);
+        //}
+
+        ArrayList myValue = new ArrayList();
+        myValue.Add(4);
+        myValue.Add(4);
+        myValue.Add(4);
+
+        foreach (var Newlist in myValue)
+        {
+            Console.WriteLine(Newlist);
+        }
+    }
+}
