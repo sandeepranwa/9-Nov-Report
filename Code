@@ -1,21 +1,24 @@
 using System;
-using System.Collections.Generic;
+using System.Text;
+using System.Collections;
+using System.Collections.Generic;   
+using System.Xml.Linq;
 
 public class myProgram
 {
     public static void Main(string[] args)
     {
-        /*
-        //Parsing 
-          string str = "123";
-          int num = int.Parse(str);
 
-          Console.WriteLine(num);
-          Console.WriteLine(str.GetType());//To check data type
-          */
+        //Parsing-------------------------------------------------------- 
+        /* string str = "123";
+         int num = int.Parse(str);
+
+         Console.WriteLine(num);
+         Console.WriteLine(str.GetType());//To check data type
+         */
 
 
-        //Type Casting 
+        //Type Casting-------------------------------------------------------- 
         /*
         decimal d = 234.726778768m;
         int num = Convert.ToInt32(d);
@@ -24,10 +27,9 @@ public class myProgram
 
         Console.WriteLine(num);
         Console.WriteLine(b);
-
         */
 
-        //convert input string value in int data type
+        //convert input string value in int data type-------------------------
         /*
         Console.Write("Enter your age:");
         int age = int.Parse(Console.ReadLine());
@@ -36,7 +38,7 @@ public class myProgram
         */
 
 
-        //String Mathods
+        //String Mathods--------------------------------------------------
         /*
         string str = "Hey, How are you!!";
         string uppar = str.ToUpper();
@@ -47,9 +49,20 @@ public class myProgram
         Console.WriteLine(uppar + "\n" + lower + " \b " + replace);
         Console.Write(insert);
 
-        //Other string methods is trim(),contain(), IndexOf()...
+        //Other string methods is trim(),contain(), IndexOf()...*/
 
-        */
+        //StringBuilder class-------------------------
+        /*StringBuilder is a dynamic object.It doesn’t create a new object in the memory 
+         * but dynamically expands the needed memory to accommodate the modified or new string.*/
+        StringBuilder s = new StringBuilder("HELLO ", 20);
+        s.AppendLine(", How are you");
+        Console.WriteLine(s);
+
+        //Array ------------------------------------------------------------------
+        /* 1.An array is a fixed-size collection of items of the same type.
+         2.The size of the array is specified when the array is created and cannot be changed afterward.
+         3.Arrays provide fast access to elements by their index.An array is a fixed-size collection of items of the same type.
+         4.The size of the array is specified when the array is created and cannot be changed afterward.*/
 
         //int[,] twoD = {{1,2,3},
         //    {5,6,7}};
@@ -59,25 +72,36 @@ public class myProgram
         //    Console.WriteLine(Newarr);
         //}
 
+        //List------------------------------------------------------------------
+        /* 1. A List is also a dynamic - size collection of items of any type.
+           2.Lists are declared using the List < T > class, where T is the type of item to be stored.
+           3.The size of the List can be changed by adding or removing elements.*/
 
-        //List<int> list = new List<int>();
-        //list.Add(1);
-        //list.Add(4);
-        //list.Add(5);
-        //list.Add(6);
-        //foreach (var Newlist in list)
-        //{
-        //    Console.WriteLine(Newlist);
-        //}
+        /* List<int> list = new List<int>();
+         list.Add(1);
+         list.Add(4);
+         list.Add(5);
+         list.Add(6);
+         foreach (var Newlist in list)
+         {
+             Console.WriteLine(Newlist);
+         }*/
 
-        ArrayList myValue = new ArrayList();
+        //ArrayList------------------------------------------
+        /* 1. An ArrayList is a dynamic - size collection of items of any type.
+           2. ArrayLists are declared using the ArrayList class.
+           3. The size of the ArrayList can be changed by adding or removing elements.
+           4. ArrayLists provide flexibility to add, remove, and modify elements at any position in the List.*/
+
+       /* ArrayList myValue = new ArrayList();
         myValue.Add(4);
         myValue.Add(4);
         myValue.Add(4);
+        myValue.AddRange(new ArrayList() { 1,2,3,4,5,6,7});
 
         foreach (var Newlist in myValue)
         {
             Console.WriteLine(Newlist);
-        }
+        }*/
     }
 }
