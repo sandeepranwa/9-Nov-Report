@@ -97,7 +97,8 @@ public class myProgram
         myValue.Add(4);
         myValue.Add(4);
         myValue.Add(4);
-        myValue.AddRange(new ArrayList() { 1,2,3,4,5,6,7});
+        myValue.Add("rahul");
+        myValue.AddRange(new ArrayList() { 1,2,3,4,5,6,7,"alex"});
 
         foreach (var Newlist in myValue)
         {
